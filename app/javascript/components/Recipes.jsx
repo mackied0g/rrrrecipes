@@ -38,6 +38,9 @@ class Recipes extends React.Component {
                 </Link>
               </div>
             </div>
+                <Link to="/" className="btn btn-link">
+                  🏠
+                </Link>
           </div>
         ));
         const noRecipe = (
@@ -52,10 +55,10 @@ class Recipes extends React.Component {
           <>
             <section className="jumbotron jumbotron-fluid text-center">
               <div className="container py-5">
-                <h1 className="display-4">Recipes for every occasion</h1>
+                <h1 className="display-4">Recipes for every season.</h1>
                 <p className="lead text-muted">
-                  We’ve pulled together our most popular recipes, our latest
-                  additions, and our editor’s picks, so there’s sure to be something
+                  I've pulled together my most popular recipes, my latest
+                  additions, and my personal favorites, so there’s sure to be something
                   tempting for you to try.
                 </p>
               </div>
@@ -64,15 +67,12 @@ class Recipes extends React.Component {
               <main className="container">
                 <div className="text-right mb-3">
                   <Link to="/recipe" className="btn custom-button">
-                    Create New Recipe
+                    Add a new recipe to my cookbook.
                   </Link>
                 </div>
                 <div className="row">
                   {recipes.length > 0 ? allRecipes : noRecipe}
                 </div>
-                <Link to="/" className="btn btn-link">
-                  Home
-                </Link>
               </main>
             </div>
           </>
